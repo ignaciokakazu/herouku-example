@@ -3,7 +3,7 @@ import { PORT } from '..';
 import { isPrime } from '../utils';
 const app = express();
 
-app.get('/', (req, res) => {
+app.get('/info', (req, res) => {
   console.log('Resolving / endpoint');
   res.json({
     pid: process.pid,

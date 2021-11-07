@@ -19,7 +19,7 @@ const numCPUs = os.cpus().length;
  * https://stackoverflow.com/questions/68978929/why-is-nodejs-cluster-module-not-working
  */
 
- const publicPath = path.resolve(__dirname, "../../public");
+ const publicPath = path.resolve(__dirname, "../public");
  Server.use(express.static(publicPath))
 
 if (clusterMode && cluster.isMaster) {
